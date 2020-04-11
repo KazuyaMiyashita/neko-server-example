@@ -15,4 +15,5 @@ lazy val root = project
     libraryDependencies += "com.kazmiy" %% "neko-jdbc" % "1.0.0",
     libraryDependencies += "com.kazmiy" %% "neko-json" % "1.0.0",
     
+    libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.17"
   )
