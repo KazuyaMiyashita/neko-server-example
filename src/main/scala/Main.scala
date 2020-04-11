@@ -1,10 +1,14 @@
+import neko.json._
+
 object Main {
 
   def main(args: Array[String]): Unit = {
-    println("Hello world!")
-    println(msg)
-  }
 
-  def msg = "I was compiled by dotty :)"
+    val json = Json.obj(
+      "hello" -> Json.str("world!")
+    )
+
+    println(Json.format(json))
+  }
 
 }
